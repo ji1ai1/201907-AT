@@ -1,5 +1,5 @@
 ### 概述
-本仓库为江离数据挖掘俱乐部代表队江离团队在[安泰杯 —— 跨境电商智能算法大赛](https://tianchi.aliyun.com/competition/entrance/231718/introduction)中的方案的代码<br />
+本仓库为江离数据挖掘俱乐部代表队江离团队在[安泰杯 —— 跨境电商智能算法大赛](https://tianchi.aliyun.com/competition/entrance/231718/introduction)中的方案的代码。<br />
 <br />
 <br />
 
