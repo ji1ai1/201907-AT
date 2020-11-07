@@ -1,3 +1,14 @@
+#R version 3.6.1 (2019-07-05) -- "Action of the Toes"
+#data.table 1.12.2
+#lightgbm 2.2.4
+
+#输入：
+#	Antai_AE_round2_item_attr_20190813.csv
+#	Antai_AE_round2_test_20190813.csv
+#	Antai_AE_round2_train_20190813.csv
+#输出：
+#	result.csv
+
 Sys.setlocale("LC_CTYPE", "chinese_taiwan")
 
 輸出目錄 = commandArgs()[length(commandArgs()) - 1]
