@@ -443,7 +443,6 @@ if (nrow(補充預測表) > 0)
 預測表 = 預測表[排名 <= 30]
 
 
-
 setorder(預測表, 排名)
 提交表 = 預測表[, .(預測字串 = paste(預測商品標識, collapse ="," )), .(買家標識)]
 write.table(提交表, 輸出目錄 + "/result.csv", sep = ",", quote = F, row.names = F, col.names = F)
