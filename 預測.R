@@ -22,16 +22,16 @@ library(lightgbm)
 library(cvAUC)
 
 
-商品表 = fread(輸入目錄 + "/Antai_AE_round2_item_attr_20190813.csv", col.names = c("商品標識", "類目標識", "店鋪標識", "價格"))
+商品表 = fread(paste0(輸入目錄, "/Antai_AE_round2_item_attr_20190813.csv"), col.names = c("商品標識", "類目標識", "店鋪標識", "價格"))
 
-測試表 = fread(輸入目錄 + "/Antai_AE_round2_test_20190813.csv", col.names = c("國家標識", "買家標識", "商品標識", "訂單時間", "買家單序", "購買標誌"))
+測試表 = fread(paste0(輸入目錄, "/Antai_AE_round2_test_20190813.csv"), col.names = c("國家標識", "買家標識", "商品標識", "訂單時間", "買家單序", "購買標誌"))
 測試表$記錄標識 = 1:nrow(測試表)
 測試表$訂單秒序 = as.double(as.POSIXct(測試表$訂單時間)) - 1525104000
 測試表$訂單日序 = 測試表$訂單秒序 %/% 86400
 測試表 = merge(測試表, 商品表, by = "商品標識", all.x = T)
 測試表[is.na(測試表)] = -1
 
-訓練表 = fread(輸入目錄 + "/Antai_AE_round2_train_20190813.csv", col.names = c("國家標識", "買家標識", "商品標識", "訂單時間", "買家單序", "購買標誌"))
+訓練表 = fread(paste0(輸入目錄, "/Antai_AE_round2_train_20190813.csv"), col.names = c("國家標識", "買家標識", "商品標識", "訂單時間", "買家單序", "購買標誌"))
 訓練表$記錄標識 = -1:-nrow(訓練表)
 訓練表$訂單秒序 = as.double(as.POSIXct(訓練表$訂單時間)) - 1525104000
 訓練表$訂單日序 = 訓練表$訂單秒序 %/% 86400
@@ -445,4 +445,4 @@ if (nrow(補充預測表) > 0)
 
 setorder(預測表, 排名)
 提交表 = 預測表[, .(預測字串 = paste(預測商品標識, collapse ="," )), .(買家標識)]
-write.table(提交表, 輸出目錄 + "/result.csv", sep = ",", quote = F, row.names = F, col.names = F)
+write.table(提交表, paste0(輸出目錄, "/result.csv"), sep = ",", quote = F, row.names = F, col.names = F)
