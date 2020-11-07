@@ -1,6 +1,6 @@
 #R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-#data.table 1.12.2
-#lightgbm 2.2.4
+#R套件 data.table 1.12.2
+#R套件 lightgbm 2.2.4
 
 #输入：
 #	Antai_AE_round2_item_attr_20190813.csv
