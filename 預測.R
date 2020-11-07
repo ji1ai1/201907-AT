@@ -8,6 +8,9 @@
 #	Antai_AE_round2_train_20190813.csv
 #输出：
 #	result.csv
+#执行：
+#	RScript 預測.R %输出目录% %输入目录%`
+
 
 Sys.setlocale("LC_CTYPE", "chinese_taiwan")
 
