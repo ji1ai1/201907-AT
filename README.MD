@@ -1,7 +1,5 @@
-### [[云上贵州2017]智慧交通预测挑战赛](https://tianchi.aliyun.com/competition/entrance/231598/introduction)
+### [安泰杯 —— 跨境电商智能算法大赛](https://tianchi.aliyun.com/competition/entrance/231718/introduction)
 <br/>
 
-这场比赛采用天池特色AB规则，其中A榜大约评测25天，B榜大约评测3天，每天评测1次，最终成绩取A榜和B榜的平均值。、
-向官方建议仅取B榜成绩，被无视。最终拿了第四名。<br/>
-这场比赛开始的时候要求大家用数加平台，但资源始终紧缺，于是中途修改规则，允许大家线下生成结果。之后我就再也没有见过数加。<br/>
-我设计了一个略为复杂的规则，也讲过几次，从来没有人理解过。这里就不多讲了。
+江离团队在这场比赛中取得了线上第二名的成绩。<br/>
+方案简述见[江离团队安泰跨境电商智能算法大赛方案简述](http://jiangliclub.com/article?article_id=65)。
